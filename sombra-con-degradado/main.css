@@ -1,0 +1,78 @@
+body {
+  font-family: Roboto;
+  padding: 30px 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  height: 150px;
+  color: #fff;
+}
+
+.card h1 {
+  align-self: flex-end;
+  margin: 0;
+}
+
+.card h2 {
+  margin: 0;
+}
+
+.card .datos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ejemplo-1 {
+  background: linear-gradient(to bottom right, #66f3ad, #69f0ea);
+  border-radius: 15px;
+  position: relative;
+}
+
+.ejemplo-1::before {
+  content: "";
+  background: linear-gradient(to bottom right, #66f3ad, #69f0ea);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}
+
+.ejemplo-2 {
+  background: linear-gradient(to bottom right, #66e0e0, #b58ef3);
+  border-radius: 15px;
+  position: relative;
+}
+
+.ejemplo-2::before {
+  content: "";
+  background: linear-gradient(to bottom right, #66e0e0, #b58ef3);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}
+
+.ejemplo-3 {
+  background: linear-gradient(to bottom right, #f5cf79, #ee7fb1);
+  border-radius: 15px;
+  position: relative;
+}
+
+.ejemplo-3::before {
+  content: "";
+  background: linear-gradient(to bottom right, #f5cf79, #ee7fb1);
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}

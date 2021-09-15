@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="clock">
+<g id="Group">
+<g id="Group_2">
+<path id="Vector" d="M256 0C114.833 0 0 114.833 0 256C0 397.167 114.833 512 256 512C397.167 512 512 397.167 512 256C512 114.833 397.167 0 256 0ZM256 472.341C136.725 472.341 39.659 375.275 39.659 256C39.659 136.725 136.725 39.659 256 39.659C375.295 39.659 472.341 136.725 472.341 256C472.341 375.275 375.275 472.341 256 472.341Z" fill="black"/>
+</g>
+</g>
+<g id="Group 1">
+<rect id="Rectangle 1" x="227" y="109" width="40" height="190" rx="20" fill="black"/>
+<rect id="Rectangle 2" x="223" y="289.829" width="40" height="135" rx="20" transform="rotate(-52.7232 223 289.829)" fill="black"/>
+</g>
+</g>
+</svg>

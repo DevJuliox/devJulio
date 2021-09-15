@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --cardFondo: rgba(255, 255, 255, 0.3);
+    --bodyfondo: #fff;
+    --titulo: #000;
+    --checkText: #000;
+    --botonFondo: #fff;
+    --colorBoton: #000;
+    --flecha: #000;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cardFondo: rgba(0, 0, 0, 0.3);
+    --bodyfondo: #000;
+    --titulo: #fff;
+    --checkText: #fff;
+    --botonFondo: #36393a;
+    --colorBoton: #fff;
+    --flecha: #fff;
+  }
+}
+
+input {
+  accent-color: hsl(328 100% 80%);
+}
+
+.flecha {
+  fill: var(--flecha);
+}
+body {
+  background: var(--bodyfondo);
+  padding: 15px;
+  margin: 0;
+  font-family: Roboto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--cardFondo);
+  padding: 15px;
+  width: 330px;
+  border-radius: 35px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 50px;
+  color: var(--titulo);
+}
+
+img {
+  max-width: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  object-fit: cover;
+}
+
+.circulos {
+  position: fixed;
+  z-index: -1;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 55px;
+}
+
+ul li {
+  margin-bottom: 15px;
+  color: var(--checkText);
+}
+
+input {
+  margin: 0;
+}
+
+.boton {
+  display: flex;
+  align-items: center;
+  padding: 18px;
+
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.boton.uno {
+  color: #fff;
+  background: linear-gradient(to right, #de7cf5, #f09579);
+}
+.boton.uno .circulo {
+  min-width: 38px;
+  min-height: 38px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.boton.dos {
+  background: var(--botonFondo);
+  color: var(--colorBoton);
+}
+
+.boton.dos .circulo {
+  min-width: 38px;
+  min-height: 38px;
+  border: 2px solid var(--colorBoton);
+  border-radius: 50px;
+  margin-right: 15px;
+}

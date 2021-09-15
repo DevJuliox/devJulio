@@ -1,0 +1,79 @@
+body {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 30px 15px;
+  font-family: Roboto;
+}
+
+.card {
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.card h1 {
+  align-self: flex-end;
+  margin: 0;
+  color: #fff;
+}
+.card h2 {
+  margin: 0;
+  color: #fff;
+}
+
+.card .datos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sample-1 {
+  color: #fff;
+  background: linear-gradient(to bottom right, #66f3ad, #69f0ea);
+  border-radius: 10px;
+  position: relative;
+}
+.sample-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #66f3ad, #69f0ea);
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}
+
+.sample-2 {
+  background: linear-gradient(to bottom right, #66e0e0, #b58ef3);
+  border-radius: 10px;
+  position: relative;
+}
+.sample-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #66e0e0, #b58ef3);
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}
+
+.sample-3 {
+  background: linear-gradient(to bottom right, #f5cf79, #ee7fb1);
+  border-radius: 10px;
+  position: relative;
+}
+.sample-3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, #f5cf79, #ee7fb1);
+  z-index: -1;
+  transform: translateY(15%) scale(0.85);
+  filter: blur(30px);
+}
